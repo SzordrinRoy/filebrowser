@@ -9,8 +9,8 @@ services:
     ports:
       - 8095:8080
     volumes:
-      - ${DATA_PATH}/data
-      - ${CONFIG_PATH}/${CONTAINER_NAME}/filebrowser/config:/config
+      - ${DATA_PATH}:/data
+      - ${CONFIG_PATH}/${CONTAINER_NAME}/config:/config
     environment:
       - FB_BASEURL=/filebrowser
     restart: unless-stopped
