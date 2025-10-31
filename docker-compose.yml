@@ -4,7 +4,6 @@ services:
     image: hurlenko/filebrowser
     network_mode: bridge
     user: "${UID}:${GID}"
-
     cpu_shares: 2048
     ports:
       - 8095:8080
